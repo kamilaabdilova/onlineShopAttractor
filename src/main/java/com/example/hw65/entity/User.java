@@ -1,13 +1,15 @@
-package entity;
+package com.example.hw65.entity;
 
-import jakarta.persistence.*;
+
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+
+import javax.persistence.*;
 
 @Data
 @RequiredArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

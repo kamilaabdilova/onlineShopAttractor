@@ -1,8 +1,8 @@
-package entity;
-
-import jakarta.persistence.*;
+package com.example.hw65.entity;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+
+import javax.persistence.*;
 
 @Data
 @RequiredArgsConstructor
@@ -12,13 +12,13 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(length = 128)
+    @Column(name = "name" ,length = 128)
     private String name;
-    @Column(length = 128)
+    @Column (name="description", length = 128)
     private String description;
-    @Column
+    @Column(name = "price", length = 128)
     private int price;
-    @Column(length = 128)
+    @Column(name = "imageUrl", length = 128)
     private String imageUrl;
     @Column
     private int quantity;
