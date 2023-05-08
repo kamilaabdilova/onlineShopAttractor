@@ -18,4 +18,11 @@ public class User {
     private String name;
     @Column(name = "age")
     private int age;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "account")
+    private String account;
+    @Column(name = "password")
+private String password;
+
 }
